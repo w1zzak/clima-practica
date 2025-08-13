@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.weather-app {
+  background-color: rgba(79, 71, 71, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.weather-app h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+form {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Estilos para el componente DetallesClima */
+.weather-details {
+  max-width: 400px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #60a5fa, #2563eb);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  color: white;
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.weather-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.weather-temp-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.weather-temp {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.weather-description {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.weather-detail-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.weather-detail-card.full-width {
+  grid-column: span 2;
+}
+
+.weather-detail-label {
+  font-size: 14px;
+  opacity: 0.9;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.weather-detail-value {
+  font-size: 20px;
+  font-weight: 600;
+}
